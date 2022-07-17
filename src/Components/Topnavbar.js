@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/Topnavbar.css";
 import logo from "../../src/Assets/logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import facebook from "../../src/Assets/facebook.png";
 import twitter from "../../src/Assets/twitter.png";
 import instagram from "../../src/Assets/instagram.png";
@@ -109,9 +109,9 @@ const Topnavbar = () => {
           <div className="col-10 mx-auto">
             <nav class="navbar navbar-expand-lg ">
               <div class="container-fluid">
-                <a class="school-logo" href="#">
+                <Link to="/" class="school-logo" href="#">
                   <img src={logo} alt="logo" />
-                </a>
+                </Link>
                 <div
                   class="collapse navbar-collapse"
                   id="navbarSupportedContent"
