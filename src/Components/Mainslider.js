@@ -2,6 +2,7 @@ import React from "react";
 import "./style/Mainslider.css";
 import img1 from "../../src/Assets/slideimg1.jpg";
 import img2 from "../../src/Assets/slideimg2.jpg";
+import img3 from "../../src/Assets/slideimg3.jpg";
 import { NavLink } from "react-router-dom";
 
 const Mainslider = () => {
