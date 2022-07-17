@@ -20,11 +20,17 @@ const Contact = () => {
     });
   };
 
-  const formSubit = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
     alert(
       `My name is ${data.fullname}. My mobile number is ${data.phone} ,My emailId is ${data.email}`
     );
+    setData({
+      fullname: "",
+      phone: "",
+      email: "",
+      message: "",
+    })
   };
   return (
     <>
@@ -35,7 +41,7 @@ const Contact = () => {
               <h4>Want to study at The Global School</h4>
             </div>
             <div className="contact-box col-10 col-md-6 mx-auto">
-              <form onSubmit={formSubit}>
+              <form>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">
                     Full Name
@@ -92,7 +98,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="contact-btn">
-                  <button type="button" class="btn">
+                  <button onClick={handleClick} type="button" class="btn">
                     Submit form
                   </button>
                 </div>
