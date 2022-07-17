@@ -32,6 +32,12 @@ const Mainslider = () => {
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
                 <div className="carousel-inner">
                   <div
@@ -61,6 +67,27 @@ const Mainslider = () => {
                   </div>
                   <div className="carousel-item">
                     <img src={img2} className="d-block w-100" alt="..." />
+                    <div className="carousel-caption d-none d-md-block">
+                      <h1>Graphic era global school</h1>
+                      <h4>Ranked #1 Best CBSE school in Dehradun</h4>
+                      <p>
+                        The Global School is among the best schools in Dehradun
+                        which provide co-educational Boarding school. The Global
+                        School offers co-educational education from Nursery to
+                        XII and is affiliated to the CBSE Board.
+                      </p>
+                      <div className="carousel-btn">
+                        <NavLink exact to="/contact" type="button" class="btn ">
+                          Contact us
+                        </NavLink>
+                        <NavLink exact to="/about" type="button" class="btn ">
+                          Know more
+                        </NavLink>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <img src={img3} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                       <h1>Graphic era global school</h1>
                       <h4>Ranked #1 Best CBSE school in Dehradun</h4>
